@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --light-text: #DFDDDD;
+    --search-bg: #F9FAFB;
+    --movie-title: #000000;
+    --time-category: #111827;
+    --gray-text: #6B7280;
+    --dark-gray-text: #374151;
+    --divider: #E5E7EB;
+}
+
+article:first-of-type {
+    margin-top: 20px;
+}

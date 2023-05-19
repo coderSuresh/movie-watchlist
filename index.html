@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/icon.svg">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/app.js" type="module"></script>
+    <title>Movie Watchlist</title>
+</head>
+
+<body class="max-w-2xl m-auto">
+
+    <header class="header flex relative bg-hero-bg bg-no-repeat h-52">
+        <div class="flex w-full md:px-10 px-5 items-center justify-between text-white">
+            <h1 class="text-3xl font-bold">Find your film</h1>
+            <a href="./watchlist.html">My watchlist</a>
+        </div>
+        <div
+            class="absolute top-full left-0 right-0 bg-white mt-[-1.15rem] md:mx-10 mx-5 flex items-center justify-between border-2 rounded">
+            <div class="flex items-center gap-2 px-2 w-full">
+                <img src="./images/ic_search.svg" alt="search icon" aria-hidden="true" role="presentation">
+                <input type="text" class="w-full active:outline-none focus:outline-none "
+                    placeholder="Search for a movie" id="search" />
+            </div>
+            <button id="search-btn" class="search-btn border-l-2 bg-search-bg text-dark-gray-text px-3 py-1">
+                Search
+            </button>
+        </div>
+    </header>
+
+    <main class="min-h-[calc(100vh-13rem)] flex items-center justify-center" id="main">
+        <div class="movies-container flex flex-col items-center" id="movies-container">
+            <img src="./images/icon.svg" alt="movie icon" aria-hidden="true" role="presentation" width="100">
+            <p class="text-center text-gray-text mt-3">Start exploring</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
